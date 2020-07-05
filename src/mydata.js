@@ -7,21 +7,21 @@ export const mydata = [
         'email':'bankolek1@gmail.com'
     } , 
     {
-        'name' : 'bankole kehinde' , 
+        'name' : 'jane doe' , 
         'status' : 'rejected' , 
         'dateapplied' : new Date().toLocaleString(),
         'dateapproved':'...',
         'email':'bankolek1@gmail.com'
     },
     {
-        'name' : 'bankole kehinde' , 
+        'name' : 'john doe' , 
         'status' : 'verified' , 
         'dateapplied' : new Date().toLocaleString(),
         'dateapproved':'...',
         'email':'bankolek1@gmail.com'
     },
     {
-        'name' : 'bankole kehinde' , 
+        'name' : 'lorem ipsum' , 
         'status' : 'pending' , 
         'dateapplied' : new Date().toLocaleString(),
         'dateapproved':'...',

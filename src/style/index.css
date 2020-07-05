@@ -8,7 +8,8 @@ html {
 
 body {
     background-color: #ffffff;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .btn,
@@ -31,7 +32,7 @@ body {
     content: "";
     width: 30px;
     height: 30px;
-    right: -40%;
+    right: -70%;
     bottom: 3px;
     border-radius: 50%;
     border-radius: 144px;
@@ -56,7 +57,9 @@ table {
     border-collapse: collapse !important;
 
 }
-
+table thead tr:first-child{
+    text-transform: uppercase;
+}
 .table-dark {
     background-color: #ffffff;
     color: black;
@@ -131,7 +134,7 @@ table,
     }
 
     #lef {
-        padding-left: 10rem;
+        padding-left: 8rem;
     }
 
     #sideNav {
@@ -139,7 +142,7 @@ table,
         position: fixed;
         top: 0;
         left: 0;
-        width: 7rem;
+        width: 5rem;
         height: 100%;
         flex-direction: column;
         text-align: center;

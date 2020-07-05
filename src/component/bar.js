@@ -4,7 +4,7 @@ export const Bar = () => {
   return (
     <>
       <div className="navbar" id="bar">
-        <h1 className="navbar-brand mb-0 h1" id="lef">My Partners</h1>
+        {/* <h1 className="navbar-brand mb-0 h1" id="lef"></h1> */}
         <ul className="navbar-nav mx-auto">
           <li className="nav-item">
             <div className="input-group">
