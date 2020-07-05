@@ -4,7 +4,6 @@ import './App.css';
 import { First } from '../src/pages/First'
 import { Second } from '../src/pages/Second'
 import { Nav } from '../src/component/Nav'
-import { Bar } from '../src/component/bar'
 import '../src/style/index.css'
 import '../src/style/bootstrap.min.css'
 import '../src/style/fontawesome-free-5.13.0-web/css/all.css'

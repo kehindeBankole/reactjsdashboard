@@ -14,7 +14,7 @@ export const Nav=()=>{
   </button>
 
   <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-    <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+    <ul className="navbar-nav mr-auto mt-lg-0" >
       <li className="nav-item">
         <NavLink className="nav-link" activeClassName="active"  to="/" exact>
           <div className=" fas fa-home fa-lg"></div>

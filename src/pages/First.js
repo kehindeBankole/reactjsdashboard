@@ -1,4 +1,5 @@
 import React from 'react'
+import { mydata } from '../mydata'
 export const First = () => {
   return (
     <>
@@ -10,9 +11,9 @@ export const First = () => {
                 <div className="card-body">
                   <div className="row">
                     <div className="col">
-                      <span class="fa-stack fa-lg mt-3" style={{ color: "red" }}>
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fas fa-home fa-stack-1x fa-inverse"></i>
+                      <span className="fa-stack fa-lg mt-3" style={{ color: "red" }}>
+                        <i className="fa fa-circle fa-stack-2x"></i>
+                        <i className="fas fa-home fa-stack-1x fa-inverse"></i>
                       </span>
                     </div>
                     <div className="col">
@@ -29,9 +30,9 @@ export const First = () => {
                 <div className="card-body">
                   <div className="row">
                     <div className="col">
-                      <span class="fa-stack fa-lg mt-3" style={{ color: "green" }}>
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fas fa-book fa-stack-1x fa-inverse"></i>
+                      <span className="fa-stack fa-lg mt-3" style={{ color: "green" }}>
+                        <i className="fa fa-circle fa-stack-2x"></i>
+                        <i className="fas fa-book fa-stack-1x fa-inverse"></i>
                       </span>
                     </div>
                     <div className="col">
@@ -48,9 +49,9 @@ export const First = () => {
                 <div className="card-body">
                   <div className="row">
                     <div className="col">
-                      <span class="fa-stack fa-lg mt-3" style={{ color: "blue" }}>
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fas fa-person-booth fa-stack-1x fa-inverse"></i>
+                      <span className="fa-stack fa-lg mt-3" style={{ color: "blue" }}>
+                        <i className="fa fa-circle fa-stack-2x"></i>
+                        <i className="fas fa-person-booth fa-stack-1x fa-inverse"></i>
                       </span>
                     </div>
                     <div className="col">
@@ -68,9 +69,9 @@ export const First = () => {
 
           {/* <div className="card">
             <div className="card-body"> */}
-          <table class="table table-responsive-sm">
+          <table className="table table-responsive-sm">
             <thead style={{ borderBottom: "none" }}>
-            <tr style={{ borderBottom: "none" }}>
+              <tr style={{ borderBottom: "none" }}>
                 <td><h3>Partners</h3></td>
                 <td></td>
                 <td>Last Name</td>
@@ -79,31 +80,31 @@ export const First = () => {
             </thead>
             <thead style={{ borderBottom: "none" }}>
               <tr style={{ borderBottom: "none" }}>
-                <th scope="col">#</th>
-                <th scope="col">First Name</th>
-                <th scope="col">Last Name</th>
-                <th scope="col">Username</th>
+                <th scope="col">name</th>
+                <th scope="col">status</th>
+                <th scope="col">date applied</th>
+                <th scope="col">date approved</th>
+                <th scope="col">email</th>
+                <th scope="col"></th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-              </tr>
+              {mydata.map((label , i) => {
+                return (
+                  <tr key={i}>
+                    <th scope="row">{label.name}</th>
+                    <td>
+                      {label.status === "pending" ? <span className="badge badge-pill badge-warning">{label.status}</span> : label.status === "verified" ? <span className="badge badge-pill badge-success">{label.status}</span> :
+                        label.status === "approved" ? <span className="badge badge-pill badge-primary">{label.status}</span> : label.status === "rejected" ? <span className="badge badge-pill badge-danger">{label.status}</span> : ""}
+                    </td>
+                    <td>{label.dateapplied}</td>
+                    <td>{label.dateapproved}</td>
+                    <td>{label.email}</td>
+                    <td><span className="fas"></span></td>
+                  </tr>
+                  
+                )
+              })}
             </tbody>
           </table>
         </div>
