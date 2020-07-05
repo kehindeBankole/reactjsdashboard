@@ -2,7 +2,6 @@ import React from 'react'
 export const First = () => {
   return (
     <>
-      {/* d-flex d-column */}
       <div className="container-fluid" id="lef">
         <div className="container" id="first">
           <div className="row">
@@ -69,13 +68,13 @@ export const First = () => {
 
           {/* <div className="card">
             <div className="card-body"> */}
-          <table class="table table-responsive-sm table-dark">
+          <table class="table table-responsive-sm">
             <thead style={{ borderBottom: "none" }}>
             <tr style={{ borderBottom: "none" }}>
-                <td scope="col">Partners</td>
-                <td scope="col"></td>
-                <td scope="col">Last Name</td>
-                <td scope="col">Username</td>
+                <td><h3>Partners</h3></td>
+                <td></td>
+                <td>Last Name</td>
+                <td>Username</td>
               </tr>
             </thead>
             <thead style={{ borderBottom: "none" }}>
@@ -107,8 +106,6 @@ export const First = () => {
               </tr>
             </tbody>
           </table>
-          {/* </div>
-          </div> */}
         </div>
       </div>
     </>

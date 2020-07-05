@@ -1,6 +1,5 @@
 import React from 'react'
 import '../style/bootstrap.min.css'
-// import '../style/index.css'
 import '../style/fontawesome-free-5.13.0-web/css/all.css'
 import {NavLink} from 'react-router-dom'
 import {Bar} from '../component/bar'
