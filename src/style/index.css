@@ -1,9 +1,16 @@
-nav  , #searchbtn{
+nav,
+#searchbtn {
     background-color: #003399;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+.card-btn {
+    position: absolute;
+    right: 0;
+    bottom: 90px;
 }
 
 body {
@@ -56,9 +63,11 @@ table {
     border-collapse: collapse !important;
 
 }
-table thead tr:first-child{
+
+table thead tr:first-child {
     text-transform: uppercase;
 }
+
 .table-dark {
     background-color: #ffffff;
     color: black;
