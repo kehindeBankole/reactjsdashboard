@@ -11,7 +11,7 @@ export const mydata = [
         'status' : 'rejected' , 
         'dateapplied' : new Date().toLocaleString(),
         'dateapproved':'...',
-        'email':'bankolek1@gmail.com'
+        'email':'janedoedummy@gmail.com'
     },
     {
         'name' : 'john doe' , 
@@ -25,6 +25,6 @@ export const mydata = [
         'status' : 'pending' , 
         'dateapplied' : new Date().toLocaleString(),
         'dateapproved':'...',
-        'email':'bankolek1@gmail.com'
+        'email':'bankolek5@gmail.com'
     }
 ]
